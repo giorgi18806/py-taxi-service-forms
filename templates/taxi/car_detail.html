@@ -11,5 +11,11 @@
   </ul>
   <a class="btn btn-primary" href="{% url 'taxi:car-update' pk=car.id %}">UPDATE</a>
   <a class="btn btn-danger" href="{% url 'taxi:car-delete' pk=car.id %}">DELETE</a>
-  <a class="btn btn-dark" href="{% url 'taxi:car-list' %}">BACK</a>
+  <button
+    type="button"
+    class="btn btn-secondary"
+    onclick="window.history.back();"
+  >
+    Cancel
+  </button>
 {% endblock %}
